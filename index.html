@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Inna A.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <!-- SECTION HEADER -->
+  <header>
+    <div class="header-wrap">
+      <nav class="navbar">
+        <a class="item" href="#portfolio">Portfolio</a>
+        <a class="item" href="#aboutMe">About</a>
+        <a class="item" href="#footer">Contacts</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- SECTION MAIN -->
+  <main>
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+      <div class="portfolio__header">
+        <h2>JavaScript projects</h2>
+        <p>Small apps I built while learning JavaScript.</p>
+      </div>
+
+      <div class="portfolio__controls">
+        <input
+          type="text"
+          id="projectSearch"
+          placeholder="Search project..."
+          aria-label="Search project"
+        />
+        <select id="techFilter" aria-label="Filter by technology">
+          <option value="all">All technologies</option>
+          <option value="js">JavaScript only</option>
+          <option value="api">JavaScript + API</option>
+        </select>
+      </div>
+
+      <div class="projects-grid">
+        <!-- image books.png  → JS-Search-Books -->
+        <article class="project-card project-card--books" data-tech="js">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">Search a book</h3>
+            <p class="project-card__description">
+              Book search page with title filtering.
+            </p>
+            <p class="project-card__stack">HTML · CSS · JavaScript</p>
+            <div class="project-card__links">
+              <a href="https://searchthing.netlify.app/" target="_blank" class="btn btn--primary">Live demo</a>
+              <a href="https://github.com/akimova-inna/JS-Search-Books"
+                 target="_blank" class="btn btn--ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- image game.png → JS-Play-with-PC -->
+        <article class="project-card project-card--game" data-tech="js">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">Game with PC</h3>
+            <p class="project-card__description">
+              Number guessing game against the computer.
+            </p>
+            <p class="project-card__stack">HTML · CSS · JavaScript</p>
+            <div class="project-card__links">
+              <a href="https://playwithpc.netlify.app/" target="_blank" class="btn btn--primary">Live demo</a>
+              <a href="https://github.com/akimova-inna/JS-Play-with-PC"
+                 target="_blank" class="btn btn--ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- image motivation.png → JS-Quotes -->
+        <article class="project-card project-card--motivation" data-tech="js">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">Motivation</h3>
+            <p class="project-card__description">
+              Random motivational quote generator on click.
+            </p>
+            <p class="project-card__stack">HTML · CSS · JavaScript</p>
+            <div class="project-card__links">
+              <a href="https://motivationwithquotes.netlify.app/" target="_blank" class="btn btn--primary">Live demo</a>
+              <a href="https://github.com/akimova-inna/JS-Quotes"
+                 target="_blank" class="btn btn--ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- image slide.png → JS-Slides -->
+        <article class="project-card project-card--slide" data-tech="js">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">Dog's shelter</h3>
+            <p class="project-card__description">
+              Dog shelter slider with clickable dog cards.
+            </p>
+            <p class="project-card__stack">HTML · CSS · JavaScript</p>
+            <div class="project-card__links">
+              <a href="https://shelterslides.netlify.app/" target="_blank" class="btn btn--primary">Live demo</a>
+              <a href="https://github.com/akimova-inna/JS-Slides"
+                 target="_blank" class="btn btn--ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- image timer.png → JS-Timer -->
+        <article class="project-card project-card--timer" data-tech="js">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">Work timer</h3>
+            <p class="project-card__description">
+              Pomodoro-style work timer with start, pause and reset.
+            </p>
+            <p class="project-card__stack">HTML · CSS · JavaScript</p>
+            <div class="project-card__links">
+              <a href="https://workrelaxtimer.netlify.app/" target="_blank" class="btn btn--primary">Live demo</a>
+              <a href="https://github.com/akimova-inna/JS-Timer"
+                 target="_blank" class="btn btn--ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- image toDo.png → JS-toDo-List -->
+        <article class="project-card project-card--toDo" data-tech="js">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">To do list</h3>
+            <p class="project-card__description">
+              Simple to-do list with add and delete.
+            </p>
+            <p class="project-card__stack">HTML · CSS · JavaScript</p>
+            <div class="project-card__links">
+              <a href="https://todolistsimplejs.netlify.app/" target="_blank" class="btn btn--primary">Live demo</a>
+              <a href="https://github.com/akimova-inna/JS-toDo-List"
+                 target="_blank" class="btn btn--ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- image weather.png → JS-Weather -->
+        <article class="project-card project-card--weather" data-tech="js api">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">Weather</h3>
+            <p class="project-card__description">
+              Weather app that loads city data via API.
+            </p>
+            <p class="project-card__stack">HTML · CSS · JavaScript · Fetch API</p>
+            <div class="project-card__links">
+              <a href="https://getweatherapirequest.netlify.app/" target="_blank" class="btn btn--primary">Live demo</a>
+              <a href="https://github.com/akimova-inna/JS-Weather"
+                 target="_blank" class="btn btn--ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- JS-Doggsy -->
+        <article class="project-card project-card--doggsy" data-tech="js">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">Doggsy</h3>
+            <p class="project-card__description">
+              Calculate a cost of dog sitting.
+            </p>
+            <p class="project-card__stack">HTML · CSS · JavaScript</p>
+            <div class="project-card__links">
+              <a href="https://doggsy.netlify.app/" target="_blank" class="btn btn--primary">Live demo</a>
+              <a href="https://github.com/akimova-inna/JS-Doggsy"
+                 target="_blank" class="btn btn--ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- JS-St.Valentine -->
+        <article class="project-card project-card--valentine" data-tech="js">
+          <div class="project-card__overlay">
+            <h3 class="project-card__title">St.Valentine's Timer</h3>
+            <p class="project-card__description">
+              How many days till the St.Valentine's Day?
+            </p>
+            <p class="project-card__stack">HTML · CSS · JavaScript</p>
+            <div class="project-card__links">
+              <a href="https://stvalentinestimer.netlify.app/" target="_blank" class="btn btn--primary">Live demo</a>
+              <a href="https://github.com/akimova-inna/JS-St.Valentines-Timer"
+                 target="_blank" class="btn btn--ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="aboutMe">
+      <div class="about-layout">
+        <div class="about-text">
+          <p><b>Hello,</b></p>
+          <p>I'm Inna Akimova, a junior front-end developer from Saint Petersburg.</p>
+          <p>I work with HTML, CSS and JavaScript and sometimes use Bootstrap for layout.</p>
+          <p>Now I'm learning React and animation libraries and focus on clean, readable code.</p>
+          <p>My goal is to grow into a confident front-end engineer.</p>
+        </div>
+        <div class="about-photo">
+          <img src="me.png" alt="Inna Akimova">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div>
+      <h4>Contacts:</h4>
+      <p>Have a questions to discuss?</p>
+      <p>E-mail:
+        <a href="mailto:akimova-88@mail.ru" target="_blank">akimova-88@mail.ru</a>
+      </p>
+      <p>WhatsApp:
+        <a href="https://wa.me/79111623131" target="_blank">Inna Akimova</a>
+      </p>
+    </div>
+
+    <p class="icon">
+      <img width="24" height="24"
+           src="https://img.icons8.com/material-outlined/24/copyright.png"
+           alt="copyright">
+      2024 Inna Akimova
+    </p>
+  </footer>
+</body>
+</html>
+
+
+
